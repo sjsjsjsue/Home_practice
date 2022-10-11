@@ -21,7 +21,24 @@ body {
 	border: 1px solid #ccc;
 	margin-bottom: 30px;
 }
-		
+#signup fieldset:last-of-type{
+	border: none;
+	margin-bottom: 0;
+}
+#signup input[type=text], #signup input[type=password], #signup input[type=tel], #signup input[type=email]{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font: 13px;
+	padding: 5px;
+	width: 200px;
+}
+#signup input:not([type=radio]){
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font: 13px;
+	padding: 5px;
+	width: 200px;
+}
 #signup legend {
 	font-size: 16px;
 	font-weight: bold;
