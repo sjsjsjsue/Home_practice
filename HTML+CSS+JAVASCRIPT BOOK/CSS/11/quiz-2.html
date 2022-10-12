@@ -13,6 +13,24 @@
       border:1px solid #ccc;
       border-radius:50%;      
       box-shadow: 5px 5px 30px 2px #000;
+			animation:rotateBear 2.5s infinite; /* rotateBear 애니메이션 2.5초 동안 실행. 무한 반복 */
+			/* 틀림 : 지정 안함.. */
+			
+    }
+		/* @keyframes image{
+			from {transform: rotateY(0px);}
+			50% {transform: rotateY(50px);}
+			to{transform: rotateY(100px);}
+		} 
+		@keyframes rotateBear{
+			from{ transform : perspective(200px) rotateY(0deg);}
+			50% {transform : perspective(200px)  rotateY(-180deg);}
+			to {transform : perspective(200px) rotateY(-360deg);}
+		}*/
+		@keyframes rotateBear {
+      from { transform: perspective(200px) rotateY(0deg); }
+      50% { transform: perspective(200px) rotateY(-180deg); }      
+      to { transform:  perspective(200px) rotateY(-360deg); }
     }
 	</style>
 </head>
